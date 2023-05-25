@@ -1,0 +1,238 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-sarif';
+
+}
+.hero{
+    height:100vh;
+    width:100%;
+    background-image: url(background-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body{
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    margin: auto 0;
+    padding-top: 40px ;
+    padding-left: 8%;
+    padding-right: 8%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0, 1.5vw;
+    list-style-type: none;
+    padding: 10px 25px ;
+
+
+}
+.logo{
+    color: whitesmoke;
+    font-size: 3vw;
+    letter-spacing: 2px;
+    font-weight: 800;
+    cursor: pointer;
+}
+span{
+    color: red;
+}
+nav ul li a{
+    color: rgb(243, 238, 237);
+    font-size: 1.5vw;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: black;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.text-container{
+    width: 50%;
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+.text-container h4{
+
+font-size: 4vw ;
+font-weight: 900;
+line-height: 4vw;
+text-transform: capitalize;
+}
+.text-container h4::first-line{
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+.text-container h4::second-line{
+    color: darkgoldenrod;
+}
+.text-container h1{
+    color: #fff;
+    font-size: 6vw;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 10vw;
+}
+.text-container h3{
+    font-size: 3vw;
+}
+.text-container .btn{
+  display: inline-block;
+  color:black;
+  background: #fff;
+  margin-top: 2vw;
+  font-size: 1.5vw;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  padding: 6px 10px;
+  box-shadow: 0 5px 10px rgba(223, 219, 219, 0.5);
+  transition: 0.3s ease;
+}
+.text-container .btn:hover{
+    letter-spacing: 3px;
+  padding: 6px 14px;
+}
+.image-container{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box{
+    position: relative;
+    min-height: 70vh;
+    margin-right: 10vw;
+    z-index: 2;
+}
+.box img{
+    height: 400px;
+    width:100%;
+    object-fit:var(50%,50%);
+}
+.icons{
+    position: fixed;
+    top:50%;
+    right: -16vw;
+    transform: translateY(-50);
+    z-index: 1000;
+}
+.icons .fa{
+    width:20vw;
+    padding: 1vw;
+    font-size: 2.5vw;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.5s ease;
+}
+
+.icons .fa:hover{
+color:#fd4a2b ;
+transform: translateX(-8vw);
+}
+.icons .fa span{
+ position: relative;
+ font-size: 1.8vw;
+ bottom: 0.3vw;
+margin-left: 1.8vw; 
+
+
+}
+.animblob{
+    position: absolute;
+    top:45%;
+    left: 40%;
+    bottom: 10%;
+    height:40vw;
+    width: 39vw;
+    transform: translate(-55%,-55%);
+    background:rgba(10, 9, 9, 0.721);
+    animation: animate_blob 8s linear infinite;
+
+}
+@keyframes animate_blob{
+0%,100%{
+    border-radius: 55% 55% 70% 45% / 60% 30% 90% 40%;
+}
+25%{
+    border-radius: 55% 45% 30% 35% / 50% 30% 50% 10%;
+
+}
+50%{
+    border-radius: 70% 35% 35% 65% / 40% 60% 30% 70%;
+
+}
+25%{
+    border-radius: 35% 65% 50% 40% / 40% 40% 40% 10%;
+
+}
+}
+
+.nav label{
+    display: none;
+}
+@media screen and (max-width: 900px) 
+body{
+    overflow: auto;
+}   */
+{ 
+.logo{
+    font-size: 5vw;
+}
+.nav label{
+    display: block;
+    color:#fff;
+    font-size: 4vw;
+ padding: 1vw;
+  background:black;
+  z-index: 1000;
+}
+.nav{
+   position: fixed;
+   top:0;
+   right:0;
+   width:40vw;
+   height: 100%;
+   background: #fff;
+   padding-top: 15vw;
+   padding-left: 5vw;
+   display: flex;
+   flex-direction: column;
+   transition: 0.3s ease;
+}
+.menu li a{
+    color: #fd4a2b;
+    font-size: 4vw;
+    margin: 0.5vw 0;
+}
+.container{
+    flex-wrap: wrap;
+}
+::-webkit-scrollbar{
+width: 12px;
+}
+}
